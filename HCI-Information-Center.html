@@ -77,8 +77,8 @@ button { font: inherit; color: var(--cp-text); background: var(--cp-surface); bo
 .folio-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; font-size: 15px; font-weight: 650; }
 .folio-brand > span { border: 1px solid var(--cp-text); border-radius: 4px; padding: 10px 6px; font: 13px Consolas, monospace; background: var(--cp-surface); }
 .folio-brand small { display: block; font-size: 9px; font-weight: 400; letter-spacing: 1.2px; margin-top: 4px; color: var(--cp-text-muted); }
-.folio-actions { display: flex; align-items: center; gap: 18px; font-size: 11px; }
-.folio-actions button { font-size: 11px; }
+.folio-account { display: grid; place-items: center; width: 40px; height: 40px; margin-left: auto; flex-shrink: 0; border: 1px solid var(--cp-border-strong); border-radius: 50%; background: var(--cp-paper-rose); }
+.folio-account svg { width: 26px; height: 26px; fill: none; stroke: var(--cp-text); stroke-width: 1.5; stroke-linecap: round; }
 main { max-width: 1280px; margin: auto; padding: 32px 24px; }
 .folio-intro { display: flex; justify-content: space-between; gap: 20px; margin-bottom: 24px; }
 .eyebrow,.card-eyebrow { font-size: 9px; letter-spacing: 1px; color: var(--cp-text-muted); }
@@ -315,7 +315,6 @@ main { max-width: 1280px; margin: auto; padding: 32px 24px; }
 }
 @media (max-width: 760px) {
   .folio-header { position: static; padding: 14px 16px; flex-wrap: wrap; }
-  .folio-actions { gap: 14px; }
   main { padding: 24px 12px; }
   .folio-intro h1 { font-size: 25px; }
   .screen-index { grid-template-columns: repeat(2,1fr); }
@@ -453,7 +452,7 @@ main { max-width: 1280px; margin: auto; padding: 32px 24px; }
 </head>
 <body>
   <a class="skip-link" href="#screens">Skip to prototype</a>
-  <header class="folio-header"><a class="folio-brand" href="#home"><span>HCI</span><div>Course Information Center<small>CS6750 · PAPER PROTOTYPE</small></div></a><div class="folio-actions"><button type="button" id="print">Print</button><a href="HCI-Information-Center.pdf" download>PDF</a><a href="HCI-Information-Center-Pack.zip" download>Download pack</a></div></header>
+  <header class="folio-header"><a class="folio-brand" href="#home"><span>HCI</span><div>Course Information Center<small>CS6750 · PAPER PROTOTYPE</small></div></a><span class="folio-account" role="img" aria-label="Account" title="Account"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="3.5"/><path d="M5 20v-1a7 7 0 0 1 14 0v1"/></svg></span></header>
   <main>
     <div class="folio-intro"><div><span class="eyebrow">INTEGRATED DESIGN</span><h1>A connected course library</h1><p>Discover, collect, and study course material.</p></div></div>
     <nav class="screen-index" aria-label="Paper screens"><a href="#home"><span>01</span>Information Center home</a><a href="#explore"><span>02</span>Explore course resources</a><a href="#professor-collection"><span>03</span>Course collection</a><a href="#my-collection"><span>04</span>Personal collection</a><a href="#study"><span>05</span>Lecture and reading</a><a href="#notes"><span>06</span>My notes</a><a href="#progress"><span>07</span>My progress</a><a href="#manage"><span>08</span>Instructor collection editor</a></nav>
@@ -764,6 +763,5 @@ main { max-width: 1280px; margin: auto; padding: 32px 24px; }
   </article></div>
   </main>
   <footer class="folio-footer">CS6750 · Human-Computer Interaction </footer>
-  <script>document.getElementById("print").addEventListener("click",()=>window.print());</script>
 </body>
 </html>
