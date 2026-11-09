@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>CS6750 | Course Information Center</title>
+  <script>document.documentElement.dataset.theme="light";</script>
+  <style>/* THEME */
+/* STYLES */</style>
+</head>
+<body>
+  <noscript><p class="callout">JavaScript is required for this interactive prototype. The separate paper prototype remains available for static viewing.</p></noscript>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">HCI</span><span>Course Information Center<small>CS6750 · Human-Computer Interaction</small></span></a>
+    <div class="top-actions"><span id="storage-label"></span><button class="account-button" data-action="account" aria-label="Account and prototype settings"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20v-1a7 7 0 0 1 14 0v1"/></svg><span id="account-name">Student</span></button></div>
+  </header>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="side-label">YOUR COURSE</div>
+      <a href="#home" class="course-selected">Information Center</a>
+      <nav class="side-nav" aria-label="Information Center">
+        <a href="#home" data-page="home"><span>⌂</span>Home</a>
+        <a href="#explore" data-page="explore"><span>⌕</span>Explore</a>
+        <a href="#collections" data-page="collections"><span>▤</span>Collections</a>
+        <a href="#notes" data-page="notes"><span>✎</span>My Notes</a>
+        <a href="#progress" data-page="progress"><span>◷</span>My Progress</a>
+      </nav>
+      <div class="side-label source-label">ORIGINAL SOURCES</div>
+      <a class="external-side" href="https://gatech.instructure.com/courses/536416" target="_blank" rel="noopener noreferrer">Canvas course <span>↗</span></a>
+      <a class="external-side" href="https://edstem.org/us/courses/102503" target="_blank" rel="noopener noreferrer">Ed Discussion <span>↗</span></a>
+      <a class="external-side" href="https://omscs6750.gatech.edu/atlas/" target="_blank" rel="noopener noreferrer">CS6750 ATLAS <span>↗</span></a>
+      <div class="side-footer"><strong>CS6750 · OMSCS</strong><p>Your notes and collections are saved on this device.</p><button class="link-button" data-action="about">About this experience</button></div>
+    </aside>
+    <div class="main-shell"><div id="warning" role="alert" hidden></div><main id="main" tabindex="-1"></main></div>
+  </div>
+  <dialog id="dialog" aria-labelledby="dialog-title"><div class="dialog-top"><h2 id="dialog-title"></h2><button class="icon-button" data-action="close-dialog" aria-label="Close dialog">×</button></div><div id="dialog-body"></div><p id="dialog-error" role="alert"></p></dialog>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+  <script>/* CATALOG */</script>
+  <script>/* MODEL */</script>
+  <script>/* APP */</script>
+</body>
+</html>

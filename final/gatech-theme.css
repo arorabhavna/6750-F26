@@ -1,0 +1,42 @@
+/* Georgia Tech core palette: https://brand.gatech.edu/our-look/colors */
+:root {
+  --cp-gt-gold: #B39051;
+  --cp-gt-dark-gold: #8F713D;
+  --cp-gt-navy: #051E39;
+  --cp-gt-white: #FFFFFF;
+  --cp-gt-diploma: #F9F6E5;
+  --cp-bg: var(--cp-gt-white);
+  --cp-bg-elevated: color-mix(in srgb,var(--cp-gt-diploma) 30%,var(--cp-gt-white));
+  --cp-surface: var(--cp-gt-white);
+  --cp-surface-soft: var(--cp-gt-diploma);
+  --cp-border: color-mix(in srgb,var(--cp-gt-navy) 18%,var(--cp-gt-white));
+  --cp-border-strong: color-mix(in srgb,var(--cp-gt-navy) 55%,var(--cp-gt-white));
+  --cp-text: var(--cp-gt-navy);
+  --cp-text-muted: color-mix(in srgb,var(--cp-gt-navy) 78%,var(--cp-gt-white));
+  --cp-text-soft: color-mix(in srgb,var(--cp-gt-navy) 70%,var(--cp-gt-white));
+  --cp-accent: var(--cp-gt-navy);
+  --cp-accent-hover: var(--cp-gt-navy);
+  --cp-accent-fg: var(--cp-gt-white);
+  --cp-accent-soft: color-mix(in srgb,var(--cp-gt-gold) 12%,var(--cp-gt-white));
+  --cp-highlight: color-mix(in srgb,var(--cp-gt-gold) 25%,var(--cp-gt-white));
+  --cp-rose: var(--cp-gt-diploma);
+  --cp-sage: color-mix(in srgb,var(--cp-gt-navy) 4%,var(--cp-gt-white));
+  --cp-sand: color-mix(in srgb,var(--cp-gt-gold) 12%,var(--cp-gt-white));
+}
+.topbar {
+  background: var(--cp-gt-navy);
+  color: var(--cp-gt-white);
+  border-bottom: 3px solid var(--cp-gt-gold);
+}
+.topbar .brand,.topbar .brand:hover { color: var(--cp-gt-white); }
+.topbar .brand small,.topbar #storage-label { color: var(--cp-gt-diploma); }
+.topbar .brand-mark { background: var(--cp-gt-gold); color: var(--cp-gt-navy); border-color: var(--cp-gt-gold); }
+.topbar .account-button { background: var(--cp-gt-navy); color: var(--cp-gt-white); border-color: var(--cp-gt-gold); }
+.topbar .account-button svg { background: var(--cp-gt-diploma); }
+.primary { color: var(--cp-gt-navy); background: var(--cp-gt-gold); border-color: var(--cp-gt-gold); }
+.primary:hover { color: var(--cp-gt-navy); background: var(--cp-gt-diploma); border-color: var(--cp-gt-dark-gold); }
+.course-selected { border-left-color: var(--cp-gt-gold); }
+.side-nav a[aria-current] { color: var(--cp-gt-navy); box-shadow: inset 3px 0 var(--cp-gt-gold),inset 0 0 0 1px var(--cp-border); }
+.side-nav a[aria-current] > span { color: var(--cp-gt-dark-gold); }
+.discovery-card h2,.play-symbol { color: var(--cp-gt-navy); }
+.eyebrow { color: var(--cp-gt-dark-gold); }
